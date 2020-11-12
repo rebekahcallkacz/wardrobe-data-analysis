@@ -4,13 +4,16 @@
 <head>
 
   <meta charset="UTF-8">
-  <title>Lorem Grid</title>
-
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'\>
+  <title>Item Acquisition Breakdown</title>
   <!-- Bootstrap CDN -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- Bootswatch Style Sheet-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/lux/bootstrap.min.css" integrity="sha384-9+PGKSqjRdkeAU7Eu4nkJU8RFaH8ace8HGXnkiKMP9I9Te0GJ4/km3L1Z8tXigpG" crossorigin="anonymous">
 
 </head>
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+<nav class="navbar navbar-expand-lg navbar-light bg-white">
     <a class="navbar-brand" href="#">The Wardrobe Nerd</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -23,7 +26,7 @@
               Figures
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Acquisition Breakdown</a>
+              <a class="dropdown-item" href="#"> Item Acquisition Breakdown</a>
               <a class="dropdown-item" href="#">Cost per Wear</a>
               <a class="dropdown-item" href="#">Wears per Month by Category</a>
               <a class="dropdown-item" href="#">Wears per Month by Subcategory </a>
@@ -44,23 +47,46 @@
 <body>
   <!-- Creates the Overall Grid -->
   <div class="container">
-
-    <!--  -->
-    <div class="row">
-      <div class="col-8">
-        <h1>Wardrobe Ethics</h1>
-        <h3>Wardrobe Acquisition</h3>
-        <img>
-        <p>Text here</p>
-      </div>
-      <div class='col-4'>
-          <h3>Fancy Image Nav Here</h3>
-
-      </div>
+    <!--Title-->
+    <div class='row'>
+        <div class = 'col-12'>
+            <h1>Wardrobe Ethics</h1>
+            <br/>
+        </div>
     </div>
 
-    
-</div>
+    <!-- Left side -->
+    <div class="row text-center">
+      <div class="col-lg-8">
+            <h5>Item Acquisition Breakdown</h5>
+            <img src='../Assets/Images/acquisitiontypes.png' alt='Pie chart showing breakdown of item acquisitions'>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>    
+
+      <!-- Right Side -->
+      <div class='col-lg-4'>
+            <h5 class="text-muted">Visualizations</h5>
+            <div class = 'row'>
+                <div class='col-md-6'>
+                    <img class='card-img' src='../Assets/Images/wpmcatbox.png' alt='Box plot showing wears per month by category'>
+                </div>
+                <div class='col-md-6'>
+                    <img class='card-img' src='../Assets/Images/cpwcatbox.png' alt='Box plot showing cost per wear by category'>
+                </div>
+            </div>
+        <div class = 'row'>
+            <div class='col-md-6'>
+                <img class='card-img' src='../Assets/Images/acquisitiontypes.png' alt='Pie chart showing breakdown of item acquisitions'>
+            </div>
+            <div class='col-md-6'>
+                <img class='card-img' src='../Assets/Images/wpmmonthline.png' alt='Line graphs showing wears per month'>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>       
+
+
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
