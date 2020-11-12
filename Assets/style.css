@@ -1,0 +1,13 @@
+/*Reference: https://stackoverflow.com/questions/45563335/how-to-create-a-full-width-table-with-fixed-height-and-scrolling-in-bootstrap/45563464 */
+
+tbody {
+    display:block; 
+    height:300px;
+    overflow-y:scroll;
+}
+tr {
+    display:block;
+} 
+th, td {
+    width:250px;
+}
