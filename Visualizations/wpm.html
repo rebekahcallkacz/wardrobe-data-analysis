@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'\>
+  <title>Average Wears per Month</title>
+  <!-- Bootstrap CDN -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- Bootswatch Style Sheet-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/lux/bootstrap.min.css" integrity="sha384-9+PGKSqjRdkeAU7Eu4nkJU8RFaH8ace8HGXnkiKMP9I9Te0GJ4/km3L1Z8tXigpG" crossorigin="anonymous">
+  <!-- Image Overlay Style Sheet -->
+  <link rel="stylesheet" type="text/css" href="../Assets/style.css">
+
+
+</head>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-white">
+    <a class="navbar-brand bg-secondary" href="../index.html">The Wardrobe Nerd</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Visualizations
+            </a>
+            <div class="dropdown-menu bg-secondary" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item bg-secondary" href="acq.html"> Item Acquisition Breakdown</a>
+              <a class="dropdown-item bg-secondary" href="cpw.html">Cost per Wear</a>
+              <a class="dropdown-item bg-secondary" href="wpm.html">Average Wears per Month</a>
+              <a class="dropdown-item bg-secondary" href="wpmline.html">Wears per Calendar Month</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item bg-secondary" target='_blank' href="https://github.com/rebekahcallkacz/wardrobe-data-analysis">Download the Code</a>
+            </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link bg-secondary" href="comparison.html">Comparison<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link bg-secondary" href="../Assets/data.html">Data</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+<body>
+  <!-- Creates the Overall Grid -->
+  <div class="container">
+    <!--Title-->
+    <div class='row'>
+        <div class = 'col-12'>
+            <h1>Wardrobe Wears</h1>
+            <br/>
+        </div>
+    </div>
+
+    <!-- Left side -->
+    <div class="row">
+      <div class="col-lg-8">
+        <div class='text-center'>
+          <h5>Average Wears per Month by Category</h5>
+            <img src='../Assets/Images/wpmcatbox.png' alt='Box plot of wears per month by category'>
+        </div>
+            <p>Since many items have been in my closet for much longer than I have been tracking wear counts, I prefer to compare normed wear counts. I do this using wears per month, a concept that I was introduced to by <a target='_blank' href= 'https://mgetsdressed.com/'> m gets dressed</a>.</p>
+            <p>Wears per month for each item is calculated using the following formula</p>
+            <blockquote class="blockquote text-center">
+                <p> (total wears)/(number months owned since 1/2019)</p>
+            </blockquote>
+            <p>If an item has been owned for less than a month, the item is considered to be 1 month old. Overall, it seems that most items do not get worn that frequently each month. This makes sense considering the number of items I own (135) and my aversion to doing laundry. There are a few outliers though; I seem to have a few favorites that I choose more frequently.</p>
+            <p>Before I tracked wear counts, I thought that I wore most seasonally appropriate items at least a couple of times per month if not more. I was surprised to find that my wears per month were much lower. After two years of tracking, I am now content with the fact that almost all items are worn at least once a year.</p>
+        </div>    
+
+      <!-- Right Side -->
+      <div class='col-lg-4'>
+            <h5 class="text-muted">Visualizations</h5>
+            <!-- Nested Columns for Visualization Navigation -->
+            <div class = 'row no-gutters'>
+                <div class='col-md-6'>
+                  <div class='overlaymask'>
+                    <a href='wpm.html'>
+                      <img class='img-fluid img-thumbnail' src='../Assets/Images/wpmcatbox.png' alt='Box plot showing wears per month by category'>
+                      <div class='overlay'></div>
+                    </a>
+                  </div>
+                </div>
+                <div class='col-md-6'>
+                  <div class='overlaymask'>
+                    <a href='cpw.html'>
+                      <img class='img-fluid img-thumbnail' src='../Assets/Images/cpwcatbox.png' alt='Box plot showing cost per wear by category'>
+                      <div class="overlay"></div>
+                  </a>
+                  </div>
+                </div>
+            </div>
+        <!-- Nested Columns for Visualization Navigation -->
+        <div class = 'row no-gutters'>
+            <div class='col-md-6'>
+              <div class='overlaymask'>
+                <a href='acq.html'>
+                  <img class='img-fluid img-thumbnail' src='../Assets/Images/acquisitiontypes.png' alt='Pie chart showing breakdown of item acquisitions'>
+                  <div class='overlay'></div>
+                </a>
+              </div>
+            </div>
+            <div class='col-md-6'>
+              <div class='overlaymask'>
+                <a href='wpmline.html'>
+                    <img class='img-fluid img-thumbnail' src='../Assets/Images/wpmmonthline.png' alt='Line graphs showing wears per month'>
+                    <div class='overlay'></div>
+                </a>
+              </div>
+            </div>
+        </div>
+      </div>
+            
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
