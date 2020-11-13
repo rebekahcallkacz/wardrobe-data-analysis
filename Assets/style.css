@@ -50,3 +50,34 @@ th, td {
     display: block;
     position: relative;
   }
+
+.overlaymask a.info {
+    display: inline-block;
+    text-decoration: none;
+    padding: 7px 14px;
+    text-transform: uppercase;
+    margin: 50px 0 0 0;
+    background-color: transparent;
+    -webkit-transform: translateY(-200px);
+    -ms-transform: translateY(-200px);
+    transform: translateY(-200px);
+    color: #000;
+    border: 1px solid #000;
+    -webkit-transition: all ease-in-out 0.3s;
+    transition: all ease-in-out 0.3s;
+  }
+  
+  .overlaymask a.info:hover {
+    box-shadow: 0 0 5px #fff;
+  }
+  
+  .overlaymask:hover a.info {
+    -webkit-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    transform: translateY(0px);
+    box-shadow: 0 0 5px #000;
+    color: #000;
+    border: 1px solid #000;
+    -webkit-transition-delay: 0.3s;
+    transition-delay: 0.3s;
+  }
