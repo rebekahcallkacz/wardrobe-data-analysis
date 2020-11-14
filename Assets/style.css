@@ -1,18 +1,40 @@
 /*References: 
 * https://stackoverflow.com/questions/45563335/how-to-create-a-full-width-table-with-fixed-height-and-scrolling-in-bootstrap/45563464 
-* https://miketricking.github.io/bootstrap-image-hover/ */
+* https://miketricking.github.io/bootstrap-image-hover/ 
+* https://stackoverflow.com/questions/14977864/fixed-header-table-with-horizontal-scrollbar-and-vertical-scrollbar-on */
 
 tbody {
-    display:block; 
-    height:300px;
-    overflow-y:scroll;
+  display:block; 
+  height:300px;
+  overflow-y:scroll;
 }
+
 tr {
-    display:block;
-} 
-th, td {
-    width:250px;
+  display:block;
 }
+th, td {
+  width:250px;
+}
+/*
+.outer-container
+{
+    background-color: #ccc;
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 300px;
+    bottom: 40px;
+}
+
+.table-header
+{
+    position: relative;
+}
+.table-body
+{
+    overflow: auto;
+}
+*/
 
 .overlaymask {
     width: 100%;
