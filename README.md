@@ -14,7 +14,8 @@ Description here.
 ### Data Collection
 
 ### Data Cleaning
-You can view the cleaned dataset [here](https://rebekahcallkacz.github.io/wardrobe-data-analysis/Assets/data.html).
+You can view the cleaned dataset <a href="https://rebekahcallkacz.github.io/wardrobe-data-analysis/Assets/data.html" target="_blank">here</a>.
+
 ### Data Analysis
 
 ## Results
