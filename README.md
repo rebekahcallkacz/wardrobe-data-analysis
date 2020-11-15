@@ -1,4 +1,4 @@
-# web-design-challenge
+# Wardrobe Data Analysis
 Version 1.0.0
 
 **[Website](https://rebekahcallkacz.github.io/wardrobe-data-analysis/)**
@@ -44,7 +44,7 @@ In addition to wear data, I also analyzed how I acquire items. As can be seen be
 ![alt text](https://github.com/rebekahcallkacz/wardrobe-data-analysis/blob/main/Assets/Images/acquisitiontypes.png "Nested Pie Chart Item Acquisitions")
 
 ## Instructions
-Due to the Google Sheets API requiring authentication, you will not be able to run the code in data_retrieval.ipynb. You can download and run the code in data_cleaning.ipynb. All other Jupyter Notebooks should run without an issues since they only pull in data from CSV files included in this repo.
+Due to the Google Sheets API requiring authentication, you will not be able to run the code in data_retrieval.ipynb. All other Jupyter Notebooks should run without issues since they only pull in data from CSV files included in this repo.
 
 ## Contributors
 Rebekah Callari-Kaczmarczyk
