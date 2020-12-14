@@ -3,15 +3,6 @@
 * https://miketricking.github.io/bootstrap-image-hover/ 
 * https://stackoverflow.com/questions/14977864/fixed-header-table-with-horizontal-scrollbar-and-vertical-scrollbar-on */
 
-table {
-  display:block; 
-  height:450px;
-  width: 1000px;
-  overflow-y:scroll;
-  overflow-x:scroll;
-  justify-content: center;
-}
-
 .overlaymask {
     width: 100%;
     height: 100%;
