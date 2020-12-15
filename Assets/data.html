@@ -4897,11 +4897,11 @@
 <script>
   $(document).ready( function () {
   $('#wardrobe-data').DataTable({
-    scrollY: '450px',
+    'pageLength': 5,
+    'lengthMenu': [ 5, 10, 25, 50, 75, 100 ],
     scrollX: true,
-    fixedHeader: true,
     fixedColumns: {leftColumns: 1}
-  });
+  }); 
 } );
 </script>
 </body>
